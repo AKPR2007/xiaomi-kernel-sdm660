@@ -64,7 +64,7 @@ build_kernel(){
     make ${BUILD_OPTIONS} deagle_tulip_defconfig
 
     # Configure the kernel (GUI)
-    make ${BUILD_OPTIONS} menuconfig
+    # make ${BUILD_OPTIONS} menuconfig
 
     # Build the kernel
     make ${BUILD_OPTIONS} Image || exit 1
