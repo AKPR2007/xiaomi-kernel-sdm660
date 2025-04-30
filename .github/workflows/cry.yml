@@ -1,0 +1,16 @@
+name: KernelCompile
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: init
+      run: chmod +x build.sh
+    - name: build
+      run: ./build.sh
